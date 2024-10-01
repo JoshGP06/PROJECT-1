@@ -12,9 +12,24 @@
             <javadoc xml:space="preserve">Constructor for objects of class MyWorld.</javadoc>
             <params/>
             <throws/>
-            <delegate target="super" params="1920,1080,1" params-java="1920, 1080, 1"/>
-            <body/>
+            <delegate target="super" params="1705,920,1" params-java="1705, 920, 1"/>
+            <body>
+                <call expression="prepare()" expression-java="prepare()" enable="true"/>
+            </body>
         </constructor>
     </constructors>
-    <methods/>
+    <methods>
+        <method access="private" type="void" type-java="void" name="prepare" enable="true">
+            <javadoc xml:space="preserve">Prepare the world for the start of the program.
+That is: create the initial objects and add them to the world.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="Jeremiah" type-java="Jeremiah" name="jeremiah" value="new Jeremiah()" value-java=" new Jeremiah()" enable="true"/>
+                <call expression="addObject(jeremiah,197,795)" expression-java="addObject(jeremiah, 197, 795)" enable="true"/>
+                <call expression="jeremiah.setLocation(74,846)" expression-java="jeremiah.setLocation(74, 846)" enable="true"/>
+                <call expression="jeremiah.setLocation(63,853)" expression-java="jeremiah.setLocation(63, 853)" enable="true"/>
+            </body>
+        </method>
+    </methods>
 </class>
