@@ -24,7 +24,7 @@ public class MyWorld extends World
      */
     private void prepare()
     {
-        Jeremiah jeremiah =  new  Jeremiah();
+        Jeremiah jeremiah =  new Jeremiah();
         addObject(jeremiah, 197, 795);
         jeremiah.setLocation(74, 846);
         jeremiah.setLocation(63, 853);
